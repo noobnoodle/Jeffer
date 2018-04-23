@@ -1,2 +1,2 @@
-import snack
+import tanshishe
 run_game()
