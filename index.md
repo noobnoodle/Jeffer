@@ -1,2 +1,2 @@
 import snack
-run game()
+run_game()
