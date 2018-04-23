@@ -1,1 +1,2 @@
-Hi!
+import snack
+run game()
