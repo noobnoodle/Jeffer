@@ -1,15 +1,34 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Jeffer's page</title>
-    <style>
-      *{margin:0;}
-      html{height:100%;}
-      body{height:100%;}
-      #first{width:100%;height:50%;background-color:#348}
-    </style>
-  </head>
-  <body>
-    <div id='first'></div>
-  </body>
+<html lang='en'>
+    <head>
+        <title>Jeffer's page</title>
+        <meta charset = 'UTF-8'>
+        <link href='css/main.css' rel='stylesheet' type='text/css'/>
+        <script type='text/javascript' src='js/page.js'></script>
+        <script type='text/javascript' src='js/snow.js'></script>
+        <script type='text/javascript' src='js/overpage.js'></script>
+        <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    </head>
+    <body>
+        <div id='p1'>
+            <div id='btm'>
+                <div id='q1'>
+                    <h1 class='shadow'>Hello!</h1>
+                    <h2 class='shadow'>This is Jeffer's page</h2>
+                </div>
+                <div id="down">
+                <canvas id="c1" width="50" height="50">您的浏览器不支持canvas，请下载更新版本的浏览器
+                </canvas>
+                </div>
+            </div>
+        </div>
+        <div id='p2'>
+            <canvas id='c2' width='500' height='500'></canvas>
+        </div>
+        <script>
+            drawDown()
+            overpage()
+        </script>
+    </body>
 </html>
+
