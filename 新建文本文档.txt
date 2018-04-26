@@ -1,0 +1,1 @@
+background: rgba(0, 0, 0, 0) -webkit-linear-gradient(rgb(4, 20, 46) 0%, rgb(29, 80, 143) 35%, rgb(82, 153, 209) 50%, rgb(29, 80, 143) 100%) repeat scroll 0% 0%;

@@ -1,4 +1,4 @@
-function snow(){
+function snowleft(){
     var c2 = document.getElementById('c2');
     var cxt = c2.getContext('2d');
     var w = c2.width = 0.99*window.innerWidth;
@@ -7,10 +7,13 @@ function snow(){
     	var w = c2.width = 0.99*window.innerWidth
     	var h = c2.height = 0.99*window.innerHeight
     }
-    var sum = 1500;
+    var sum = 800;
     var p = [];
     for (var i=0;i<sum;i++){
-		p.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*3,});
+    	var q = Math.random()*0.18*w;
+    	var e = w-Math.random()*0.18*w;
+		p.push({x:q,y:Math.random()*h,r:Math.random()*3,});
+		p.push({x:e,y:Math.random()*h,r:Math.random()*3,});
     }
 	function changey(){
 		for (var i=0;i<sum;i++){
@@ -22,7 +25,7 @@ function snow(){
 	}
     function draw(){
     	cxt.beginPath();
-    	cxt.fillStyle = '#00FFFF';
+    	cxt.fillStyle = '#FFF';
     	for (var i=0;i<sum;i++){
     		cxt.moveTo(p[i].x,p[i].y)
 			cxt.arc(p[i].x,p[i].y,p[i].r,0,2*Math.PI,false);
@@ -36,3 +39,4 @@ function snow(){
 		draw()
 	},50)
 }
+

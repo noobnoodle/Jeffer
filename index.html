@@ -8,6 +8,7 @@
         <script type='text/javascript' src='js/snow.js'></script>
         <script type='text/javascript' src='js/overpage.js'></script>
         <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+        <script type='text/javascript' src='js/changelist.js'></script>
     </head>
     <body>
         <div id='p1'>
@@ -25,9 +26,26 @@
         <div id='p2'>
             <canvas id='c2' width='500' height='500'></canvas>
         </div>
+        <div id='p3'>
+            <ul>
+                <li class='l1'>1</li>
+                <li class='l2'>
+                    <div></div>
+                </li>
+                <li class='l1'>2</li>
+                <li class='l2'>
+                    <div></div>
+                </li>
+                <li class='l1'>3</li>
+                <li class='l2'>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
         <script>
             drawDown()
             overpage()
+            changelist()
         </script>
     </body>
 </html>
