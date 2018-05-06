@@ -5,53 +5,28 @@
         <meta charset = 'UTF-8'>
         <meta name = 'Jeffer'>
         <link href='css/main.css' rel='stylesheet' type='text/css'/>
-        <script type='text/javascript' src='js/page.js'></script>
-        <script type='text/javascript' src='js/snowall.js'></script>
-        <script type='text/javascript' src='js/overpage.js'></script>
         <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
-        <script type='text/javascript' src='js/changelist.js'></script>
+        <script type='text/javascript' src='js/wec.js'></script>
     </head>
     <body>
-        <div id='bg'></div>
-        <div id='btm'></div>
-        <div id='p1'>
-            <div id='q1'>
-                <h1 class='shadow'>Hello!</h1>
-                <h2 class='shadow'>This is Jeffer's page</h2>
-            </div>
-            <div id="down">
-            <canvas id="c1" width="50" height="50">您的浏览器不支持canvas，请下载更新版本的浏览器
-            </canvas>
-            </div>
-        </div>
-<!--         <div id='p2'>
-            <canvas id='c2' width='500' height='500'></canvas>
-        </div>
-        <div id='p3'>
-            <ul id='u1'>
-                <li id='firl' class='l1'>1</li>
-                <li class='l1'>2</li>
-                <li class='l1'>3</li>
-            </ul>
-            <ul id='u2'>
-                <li id='fir' class='l2'>
-                    <div>
-                        <p>11</p>
-                    </div>
-                </li>
-                <li class='l2'>
-                    <div><p>22</p></div>
-                </li>
-                <li class='l2'>
-                    <div><p>333</p></div>
-                </li>
-            </ul>
+        <div id='main'>
+            <div id='bg'></div>
+            <div id='btm'></div>
+            <header id='header'>
+                <h1>Jeffer Chen</h1>
+                <p>Welcome, glad to see you</p>
+                <ul>
+                    <li><a href='https://www.jianshu.com/u/fff848eabd2d' class='fa fa-leaf' target="_blank"></a></li>
+                    <li><a href='http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=awEODQ0OGTQIAw4FKw0EEwYKAgdFCAQG' class='fa fa-envelope-o' target="_blank"></a></li>
+                    <li><a id='wec' class='fa fa-weixin'></a></li>
+                </ul>
+            </header>
+            <div id='wechat'></div>
         </div>
         <script>
-            drawDown()
-            overpage()
-            changelist()
-        </script> -->
+            wec()
+            wecp()
+        </script>
     </body>
 </html>
 
